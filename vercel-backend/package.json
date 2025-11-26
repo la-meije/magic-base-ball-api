@@ -17,7 +17,6 @@
   "author": "Magic Base Ball",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^2.11.2",
     "ethers": "^6.9.0"
   },
   "devDependencies": {
