@@ -1,0 +1,26 @@
+{
+  "name": "magic-base-ball-api",
+  "version": "1.0.0",
+  "description": "Metadata and image generation API for Magic Base Ball NFTs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed'",
+    "test": "node test-local.js"
+  },
+  "keywords": [
+    "nft",
+    "metadata",
+    "base",
+    "vercel"
+  ],
+  "author": "Magic Base Ball",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "ethers": "^6.9.0"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

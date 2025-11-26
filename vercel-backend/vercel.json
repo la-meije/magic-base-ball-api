@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/metadata/(.*)",
+      "dest": "/api/metadata/[tokenId].js"
+    },
+    {
+      "src": "/api/image/(.*)",
+      "dest": "/api/image/[tokenId].js"
+    }
+  ],
+  "env": {
+    "CONTRACT_ADDRESS": "@contract_address",
+    "BASE_RPC_URL": "@base_rpc_url"
+  }
+}
