@@ -1,19 +1,12 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/metadata/(.*)",
-      "dest": "/api/metadata/[tokenId].js"
+      "source": "/api/metadata/:tokenId",
+      "destination": "/api/metadata/[tokenId]"
     },
     {
-      "src": "/api/image/(.*)",
-      "dest": "/api/image/[tokenId].js"
+      "source": "/api/image/:tokenId",
+      "destination": "/api/image/[tokenId]"
     }
   ]
 }
