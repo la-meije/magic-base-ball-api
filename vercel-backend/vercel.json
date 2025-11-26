@@ -15,9 +15,5 @@
       "src": "/api/image/(.*)",
       "dest": "/api/image/[tokenId].js"
     }
-  ],
-  "env": {
-    "CONTRACT_ADDRESS": "@contract_address",
-    "BASE_RPC_URL": "@base_rpc_url"
-  }
+  ]
 }
